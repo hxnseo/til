@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Melting Images</title>
+        <style type="text/css">
+            #cover {
+                position: relative;
+                margin: 10px;
+            }
+
+            #cover img {
+                position: absolute;
+                left: 0;
+                transition: opacity 2s ease-in-out;
+            }
+
+            #cover img.top:hover {
+                opacity: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="cover">
+            <img class="bottom" width="100%" src="icon_navy.png" alt="chatGOV1">
+            <img class="top" width="100%" src="icon_white.png" alt="chatGOV2">
+        </div>
+    </body>
+</html>

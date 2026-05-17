@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Skew</title>
+        <style type="text/css">
+        .textbox {
+            margin: 75px; padding: 25px; border: 3px solid DarkGreen;
+            background: lightGreen; height: 100px; width: 200px;
+            text-align: center; font-size: 250%;
+            border-radius: 15px;
+            animation: skew 3s infinite linear;
+        }
+
+        @keyframes skew {
+            from { transform: skewX(0deg); }
+            25% { transform: skewX(45deg); }
+            50% { transform: skewX(0deg); }
+            75% { transform: skewX(-45deg); }
+            to { transform: skewX(0deg); }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="textbox">Skewing Text</div>
+    </body>
+</html>

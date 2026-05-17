@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Box Shadow</title>
+        <style type = "text/css">
+            div {
+                margin: 5em;
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                box-shadow: 25px 25px 50px dimgrey;
+                float: left;
+                margin-right: 120px;
+                margin-top: 40px;
+            }
+
+            #box2 {
+                width: 200px;
+                background-color: plum;
+                box-shadow: -25px, -25px, 50px dimgray;
+            }
+
+            h2 { text-align: center; }
+        </style>
+    </head>
+
+    <body>
+        <div><h2>Box Shadow bottom and right</h2></div>
+        <div id = "box2"><h2>Box Shadow top and left</h2></div>
+    </body>
+</html>

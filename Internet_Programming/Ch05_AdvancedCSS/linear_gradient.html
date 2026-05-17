@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Linear Gradient</title>
+        <style type = "text/css">
+            div {
+                width: 200px; height: 200px;
+                margin: 1em; border: 3px solid navy; padding: 5px 20px;
+                text-align: center;
+                background: linear-gradient(to bottom, white 15%, lightsteelblue 50%, navy 75%);
+                margin-right: 15px;
+            }
+
+            #horizontal {
+                width: 200px; height: 200px;
+                border: 3px solid orange; padding: 5px 20px;
+                text-align: center;
+                background: linear-gradient(to right, white 15%, yellow 50%, orange 75%);
+                margin-right: 15px;
+            }
+
+            #diagonal {
+                width: 200px; height: 200px;
+                border: 3px solid purple; padding: 5px 20px;
+                text-align: center;
+                background: linear-gradient(135deg, white 15%, plum 50%, purple 75%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div><h2>Vertical Linear Gradient</h2></div>
+        <div id="horizontal"><h2>Horizontal Linear Gradient</h2></div>
+        <div id="diagonal"><h2>Diagonal Linear Gradient</h2></div>
+    </body>
+</html>
