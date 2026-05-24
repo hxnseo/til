@@ -12,13 +12,15 @@ class Money {
         double getAmount() const;
         int getDollars() const;
         int getCents() const;
-        void input();
         void output() const;
+        void input();
 
         friend const Money operator +(const Money &amount1, const Money &amount2);
         friend const Money operator -(const Money &amount1, const Money &amount2);
         friend bool operator ==(const Money &amount1, const Money &amount2);
         friend const Money operator -(const Money &amount);
+        friend ostream &operator << (ostream &outputStream, const Money &amount);
+        friend istream &operator >> (istream &inputStream, Money &amount);
 
     private:
         int dollars;

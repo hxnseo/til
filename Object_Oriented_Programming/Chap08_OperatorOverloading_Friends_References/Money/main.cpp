@@ -5,14 +5,10 @@ using namespace std;
 int main() {
     Money yourAmount, myAmount(10, 9);
     cout << "Enter an amount of money: ";
-    yourAmount.input();
-    cout << "Your amount is: ";
-    yourAmount.output();
-    cout << endl;
-
-    cout << "My amount is: ";
-    myAmount.output();
-    cout << endl;
+    cin >> yourAmount;
+    cout << "Your amount is: " << yourAmount << endl;
+    
+    cout << "My amount is: " << myAmount << endl;
 
     if (yourAmount == myAmount) {
         cout << "We have the same amounts.\n";
@@ -22,12 +18,10 @@ int main() {
     }
 
     Money ourAmount = yourAmount + myAmount;
-    yourAmount.output(); cout << " + "; myAmount.output();
-    cout << " equals "; ourAmount.output(); cout << endl;
+    cout << yourAmount << " + " << myAmount << " equals " << ourAmount << endl;
 
     Money diffAmount = yourAmount - myAmount;
-    yourAmount.output(); cout << " - "; myAmount.output();
-    cout << " equals "; diffAmount.output(); cout << endl;
+    cout << yourAmount << " - " << myAmount << " equals " << diffAmount << endl;
 
     return 0;
 }
